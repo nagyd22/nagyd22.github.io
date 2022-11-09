@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <section class="game">
+        <div class="scores">
+            <div class="playerscore">
+                <h2>Player</h2>
+                <p id="win">0</p>
+            </div>
+            <div class="drawscore">
+                <h2>Draw</h2>
+                <p id="draw">0</p>
+            </div>
+            <div class="computerscore">
+                <h2>Computer</h2>
+                <p id="lose">0</p>
+            </div>
+        </div>
+        <div class="result" id="result">Select an option and hit play</div>
+        <div class="options">
+            <button class="rock" onclick="rock()"><img src="rock.png" alt="rock" width="200" height="280"></button>
+            <button class="paper" onclick="paper()"><img src="paper.png" alt="paper" width="200" height="280"></button>
+            <button class="scissor" onclick="scissors()"><img src="scissor.png" alt="scissor" width="200" height="280"></button>
+        </div>
+        <div class="selected">
+            <h2 id="which">You selected:</h2>
+        </div>
+        <button class="winner" onclick="winner()">Play</button> 
+    </section>
+    <script src='app.js'></script>
+</body>
+</html>
